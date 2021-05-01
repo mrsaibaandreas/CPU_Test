@@ -4,11 +4,16 @@
     select the JavaFX path. path/to/javafx-sdk1x.x.x/lib
     
 # 2. Add a new Path Variable
-    Click on File->Settings and go to Path Variables and add a new one,
+    Click on File->Settings->Appereance & Behavior and go to Path Variables and add a new one,
     named PATH_TO_FX, containing the path path/to/javafx-sdk1x.x.x/lib
     
    
-# 3. Add VM Options
+# 3. Click on Run->Edit Configurations
+    Click on the "plus sign" and select Application
+    Select Application
+    Add as main class sample.Main
+ 
+# 4. Add VM Options
     Click on Run->Edit Configurations and select VM Options
     Add the following text :
     --module-path ${PATH_TO_FX} --add-modules javafx.controls,javafx.fxml 
