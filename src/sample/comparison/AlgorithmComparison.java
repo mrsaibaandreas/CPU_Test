@@ -41,7 +41,7 @@ public class AlgorithmComparison {
 
         /*
          * Output: 2000000000 times <<n: Duration: 5,743777s; For each piece: 2,871889e-09s
-         * 2000000000 times *16: Dauer: 5,826090s; For each piece: 2,913045e-09s // Measured on
+         * 2000000000 times *16: Duration: 5,826090s; For each piece: 2,913045e-09s // Measured on
          * jre 1.8.0_40, Intel I7-4650U, Win10
          */
 
