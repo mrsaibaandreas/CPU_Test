@@ -1,5 +1,5 @@
-package fixed_point.bench.cpu;
-import fixed_point.bench.IBenchmark;
+package algos.bench.cpu;
+import algos.bench.IBenchmark;
 
 import static java.lang.String.valueOf;
 

@@ -1,4 +1,4 @@
-package fixed_point.logging;
+package algos.logging;
 import java.io.*;
 
 public class FileLogger implements ILogger{

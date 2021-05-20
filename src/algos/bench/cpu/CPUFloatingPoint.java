@@ -1,17 +1,17 @@
-package fixed_point.bench.cpu;
+package algos.bench.cpu;
 
-import fixed_point.bench.IBenchmark;
-import fixed_point.logging.ConsoleLogger;
-import fixed_point.logging.ILogger;
-import fixed_point.logging.TimeUnit;
-import fixed_point.timing.ITimer;
+import algos.bench.IBenchmark;
+import algos.logging.ConsoleLogger;
+import algos.logging.ILogger;
+import algos.logging.TimeUnit;
+import algos.timing.ITimer;
 
 import java.util.ArrayList;
 
 public class CPUFloatingPoint implements IBenchmark {
 
     ArrayList<Character> operators;
-    ITimer timer = new fixed_point.timing.Timer();
+    ITimer timer = new algos.timing.Timer();
     TimeUnit timeUnit = TimeUnit.Micro;
     ILogger log = new ConsoleLogger();
 

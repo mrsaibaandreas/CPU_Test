@@ -1,4 +1,4 @@
-package fixed_point.timing;
+package algos.timing;
 
 public interface ITimer {
         void start();

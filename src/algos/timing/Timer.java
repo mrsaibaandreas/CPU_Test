@@ -1,4 +1,4 @@
-package fixed_point.timing;
+package algos.timing;
 
 public class Timer implements ITimer{
     long start;

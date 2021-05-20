@@ -1,12 +1,12 @@
-package fixed_point.testbench;
+package algos.testbench;
 
-import fixed_point.bench.cpu.CPUFixedPoint;
-import fixed_point.logging.ConsoleLogger;
-import fixed_point.logging.ILogger;
-import fixed_point.logging.TimeUnit;
-import fixed_point.timing.ITimer;
-import fixed_point.timing.Timer;
-import fixed_point.bench.IBenchmark;
+import algos.bench.cpu.CPUFixedPoint;
+import algos.logging.ConsoleLogger;
+import algos.logging.ILogger;
+import algos.logging.TimeUnit;
+import algos.timing.ITimer;
+import algos.timing.Timer;
+import algos.bench.IBenchmark;
 //import fixed_point.bench.cpu.CPUFixedPoint;
 //import fixed_point.bench.cpu.CPUNumberRepresentation;
 

@@ -1,12 +1,12 @@
-package fixed_point.testbench;
+package algos.testbench;
 
-import fixed_point.bench.IBenchmark;
-import fixed_point.bench.cpu.CPUDigitsOfPi;
-import fixed_point.logging.ConsoleLogger;
-import fixed_point.logging.ILogger;
-import fixed_point.logging.TimeUnit;
-import fixed_point.timing.ITimer;
-import fixed_point.timing.Timer;
+import algos.bench.IBenchmark;
+import algos.bench.cpu.CPUDigitsOfPi;
+import algos.logging.ConsoleLogger;
+import algos.logging.ILogger;
+import algos.logging.TimeUnit;
+import algos.timing.ITimer;
+import algos.timing.Timer;
 
 public class TestCPUDigitsOfPi {
     public static void main(String[] args) {
