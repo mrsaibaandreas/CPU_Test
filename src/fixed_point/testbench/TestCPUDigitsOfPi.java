@@ -23,8 +23,6 @@ public class TestCPUDigitsOfPi {
 
         log.writeTime("The test has been ended in", endTime, timeUnit);
         log.write(testBench.getResult());
-
-        testBench.clean();
         log.close();
     }
 

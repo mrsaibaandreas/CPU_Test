@@ -1,6 +1,6 @@
 package sample.comparison;
 
-public class Timer {
+public class    Timer {
     static long timeStart = 0L;
 
     public static void printTimePerWorkItem(long numItems) {
