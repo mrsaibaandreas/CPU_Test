@@ -8,7 +8,11 @@ public class Timer {
         if (0L < timeStart) // Do not print the first time
         {
             double secs = (timeEnd - timeStart) / 1.e9;
+<<<<<<< HEAD
             System.out.printf("Duration: %fs; for each one: %es", secs, secs / numItems);
+=======
+            System.out.printf("Duration: %fs; je St�ck: %es", secs, secs / numItems);
+>>>>>>> catricicau
         }
         timeStart = timeEnd;
     }
