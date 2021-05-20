@@ -5,10 +5,10 @@ public class Timer {
 
     public static void printTimePerWorkItem(long numItems) {
         long timeEnd = System.nanoTime();
-        if (0L < timeStart) // Beim ersten Mal nicht drucken
+        if (0L < timeStart) // Do not print the first time
         {
             double secs = (timeEnd - timeStart) / 1.e9;
-            System.out.printf("Dauer: %fs; je St�ck: %es", secs, secs / numItems);
+            System.out.printf("Duration: %fs; je St�ck: %es", secs, secs / numItems);
         }
         timeStart = timeEnd;
     }
@@ -22,7 +22,7 @@ public class Timer {
             for (long i = 0; i < NUM; i++) {
                 s = '#' + s.substring(1) + "-";
             }
-            System.out.println("L�nge String: " + s.length());
+            System.out.println("String Length: " + s.length());
             printTimePerWorkItem(s.length());
         }
 
@@ -33,7 +33,7 @@ public class Timer {
                 s.append("-");
                 s.setCharAt(0, '#');
             }
-            System.out.println("\nL�nge StringBuilder: " + s.length());
+            System.out.println("\nStringBuilder Length: " + s.length());
             printTimePerWorkItem(s.length());
 
         }
@@ -45,7 +45,7 @@ public class Timer {
                 s.append("-");
                 s.setCharAt(0, '#');
             }
-            System.out.println("\nL�nge Stringbuffer: " + s.length());
+            System.out.println("\nStringbuffer length: " + s.length());
             printTimePerWorkItem(s.length());
         }
     }
