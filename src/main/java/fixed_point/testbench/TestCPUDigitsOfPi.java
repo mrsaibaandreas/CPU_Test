@@ -17,8 +17,9 @@ public class TestCPUDigitsOfPi {
 
         IBenchmark testBench = new CPUDigitsOfPi();
         testBench.initialize(10000);
+        testBench.warmUp();
         timer.start();
-        testBench.run(0);//choose the option
+        testBench.run(1);//choose the option
         long endTime = timer.stop();
 
         log.writeTime("The test has been ended in", endTime, timeUnit);
