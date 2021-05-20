@@ -1,6 +1,4 @@
-package fixed_point.logging;
-
-import org.w3c.dom.html.HTMLImageElement;
+package sample.fixed_point.logging;
 
 public enum TimeUnit {
     Nano, Micro, Milli, Sec;
