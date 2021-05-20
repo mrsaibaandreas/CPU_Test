@@ -1,6 +1,6 @@
 package fixed_point.bench.cpu;
 
-import fixed_point.bench.IBenchmark;
+import sample.fixed_point.bench.IBenchmark;
 
 import static java.lang.Math.abs;
 import static java.lang.Math.pow;
