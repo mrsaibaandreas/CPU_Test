@@ -13,7 +13,7 @@ import sample.fixed_point.bench.IBenchmark;
 
 public class TestCPUFixedPoint {
 
-    public static void main(String[] args) {
+    public static void test() {
         ITimer timer = new Timer();
         ILogger log = new ConsoleLogger();
         TimeUnit timeUnit = TimeUnit.Milli;

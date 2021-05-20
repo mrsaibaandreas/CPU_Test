@@ -1,4 +1,4 @@
-package fixed_point.bench.cpu;
+package sample.fixed_point.bench.cpu;
 
 import sample.fixed_point.bench.IBenchmark;
 

@@ -9,7 +9,7 @@ import sample.fixed_point.timing.ITimer;
 import sample.fixed_point.timing.Timer;
 
 public class TestCPUDigitsOfPi {
-    public static void main(String[] args) {
+    public static void test() { //function to be called when clicked
 
         ITimer timer = new Timer();
         ILogger log = new ConsoleLogger();

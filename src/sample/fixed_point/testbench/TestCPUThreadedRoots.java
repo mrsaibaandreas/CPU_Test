@@ -1,7 +1,7 @@
-package fixed_point.testbench;
+package sample.fixed_point.testbench;
 
 import sample.fixed_point.bench.IBenchmark;
-import fixed_point.bench.cpu.CPUThreadedRoots;
+import sample.fixed_point.bench.cpu.CPUThreadedRoots;
 
 import sample.fixed_point.logging.ConsoleLogger;
 import sample.fixed_point.logging.ILogger;
@@ -11,7 +11,7 @@ import sample.fixed_point.timing.Timer;
 
 public class TestCPUThreadedRoots {
 
-    public static void main(String[] args) {
+    public static void test() {
         ITimer timer = new Timer();
         ILogger log = new ConsoleLogger();
         TimeUnit timeUnit = TimeUnit.Sec;
