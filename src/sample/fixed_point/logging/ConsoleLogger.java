@@ -1,4 +1,4 @@
-package fixed_point.logging;
+package sample.fixed_point.logging;
 
 public class ConsoleLogger implements ILogger{
     //public ConsoleLogger() {}

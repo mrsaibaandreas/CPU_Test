@@ -1,4 +1,4 @@
-package fixed_point.logging;
+package sample.fixed_point.logging;
 
 public interface ILogger {
     void write(long param);

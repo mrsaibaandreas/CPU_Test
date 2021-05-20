@@ -1,4 +1,4 @@
-package fixed_point.bench;
+package sample.fixed_point.bench;
 
 public interface IBenchmark {
     void run();

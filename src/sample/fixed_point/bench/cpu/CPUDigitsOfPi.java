@@ -1,8 +1,7 @@
-package fixed_point.bench.cpu;
+package sample.fixed_point.bench.cpu;
 
-import fixed_point.bench.IBenchmark;
+import sample.fixed_point.bench.IBenchmark;
 
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Collections;
 
