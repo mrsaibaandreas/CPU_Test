@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class FixedController  {
+public class FixedController implements Initializable {
     @FXML
     private Label fixedLabel;
 
@@ -31,5 +31,10 @@ public class FixedController  {
 
         window.setScene(NewCustomerScene);
         window.show();
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        fixedLabel.setText("bla");
     }
 }

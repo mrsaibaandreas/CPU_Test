@@ -67,7 +67,7 @@ public class CPUFixedPoint implements IBenchmark {
     }
 
     public String getResult() {
-        return valueOf(mop);
+        return valueOf(mop).toString();
     }
 
 
