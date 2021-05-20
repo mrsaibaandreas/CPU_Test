@@ -1,5 +1,6 @@
 package fixed_point.bench.cpu;
 import fixed_point.bench.IBenchmark;
+
 import static java.lang.String.valueOf;
 
 
@@ -86,7 +87,7 @@ public class CPUFixedPoint implements IBenchmark {
 
     private void branching()
     {
-        int i, j=0;
+        int i, j=1;
 
         for(i=0;i<size;i++) {
             if (j == 1) {
