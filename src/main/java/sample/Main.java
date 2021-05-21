@@ -20,4 +20,3 @@ import javafx.stage.Stage;
             launch(args);
         }
     }
-    

@@ -18,6 +18,7 @@ public class TestCPUDigitsOfPi {
         TimeUnit timeUnit = TimeUnit.Milli;
 
         IBenchmark testBench = new CPUDigitsOfPi();
+        testBench.warmUp();
         testBench.initialize(params);
         timer.start();
         testBench.run(0);//choose the option

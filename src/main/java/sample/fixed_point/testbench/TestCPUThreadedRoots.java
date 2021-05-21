@@ -22,7 +22,9 @@ public class TestCPUThreadedRoots {
 
         IBenchmark bench = new CPUThreadedRoots();
         bench.initialize(workload); //workload
-
+        for(int i = nOfThreads; i >= 1; i /= 2){
+          bench.warmUp();
+        }
         for(int i = nOfThreads; i >= 1; i /= 2){
             timer.start();
             bench.run(i);
