@@ -80,15 +80,5 @@ public class RunningProgrammController {
         window.show();
     }
 
-    @FXML
-    public void runAll(ActionEvent event) throws IOException {
-        Parent NewCustomer = FXMLLoader.load(getClass().getResource("/run_all.fxml"));
-        Scene NewCustomerScene = new Scene(NewCustomer);
 
-        //Here we get the stage information
-        Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
-
-        window.setScene(NewCustomerScene);
-        window.show();
-    }
 }
