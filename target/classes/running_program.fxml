@@ -20,6 +20,6 @@
       <Button fx:id="floating_point" layoutX="444.0" layoutY="92.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="135.0" text="Floating Point" onAction="#Fl_Action"/>
       <Button fx:id="fx_point" layoutX="444.0" layoutY="46.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="135.0" text="Fixed Point" onAction="#FxAction" />
       <Button fx:id="tr_roots" layoutX="444.0" layoutY="188.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="135.0" text="Threaded Roots" onAction="#Tr_Roots_Action" />
-      <Button fx:id="tr" layoutX="444.0" layoutY="232.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="135.0" text="Catricicau" onAction="#TrAction"/>
+      <Button fx:id="tr" layoutX="444.0" layoutY="232.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="135.0" text="Threads" onAction="#TrAction"/>
    </children>
 </AnchorPane>
