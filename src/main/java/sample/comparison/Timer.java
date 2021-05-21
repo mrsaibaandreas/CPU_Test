@@ -9,7 +9,6 @@ public class    Timer {
         {
             double secs = (timeEnd - timeStart) / 1.e9;
             System.out.printf("Duration: %fs; for each one: %es", secs, secs / numItems);
-            System.out.printf("Duration: %fs; je St�ck: %es", secs, secs / numItems);
 
         }
         timeStart = timeEnd;
