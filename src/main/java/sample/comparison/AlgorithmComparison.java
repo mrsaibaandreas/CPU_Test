@@ -34,6 +34,8 @@ public class AlgorithmComparison {
         sample.comparison.Timer.printTimePerWorkItem(nTests);
 
         System.out.print("\n" + nTests + " times *16: ");
+
+
         for (i = 0; i < nTests; i++) {
             sum += b * twoSquaredN;
         }
