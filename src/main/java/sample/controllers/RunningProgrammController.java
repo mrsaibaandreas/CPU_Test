@@ -6,7 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 
@@ -18,7 +17,7 @@ public class RunningProgrammController {
     @FXML
     public void PiAction(ActionEvent event) throws IOException {
 
-        Parent NewCustomer = FXMLLoader.load(getClass().getResource("resources/Pi.fxml"));
+        Parent NewCustomer = FXMLLoader.load(getClass().getResource("/Pi.fxml"));
         Scene NewCustomerScene = new Scene(NewCustomer);
 
         //Here we get the stage information
@@ -32,7 +31,7 @@ public class RunningProgrammController {
 
     @FXML
     public void TrAction(ActionEvent event) throws IOException {
-        Parent NewCustomer = FXMLLoader.load(getClass().getResource("resources/SimpleThread.fxml"));
+        Parent NewCustomer = FXMLLoader.load(getClass().getResource("/SimpleThread.fxml"));
         Scene NewCustomerScene = new Scene(NewCustomer);
 
         //Here we get the stage information
@@ -45,7 +44,7 @@ public class RunningProgrammController {
 
     @FXML
     public void Tr_Roots_Action(ActionEvent event) throws IOException {
-        Parent NewCustomer = FXMLLoader.load(getClass().getResource("resources/Thread.fxml"));
+        Parent NewCustomer = FXMLLoader.load(getClass().getResource("/Thread.fxml"));
         Scene NewCustomerScene = new Scene(NewCustomer);
 
         //Here we get the stage information
@@ -58,7 +57,7 @@ public class RunningProgrammController {
 
     @FXML
     public void FxAction(ActionEvent event) throws IOException {
-        Parent NewCustomer = FXMLLoader.load(getClass().getResource("resources/Fixed.fxml"));
+        Parent NewCustomer = FXMLLoader.load(getClass().getResource("/Fixed.fxml"));
         Scene NewCustomerScene = new Scene(NewCustomer);
 
         //Here we get the stage information
@@ -71,7 +70,7 @@ public class RunningProgrammController {
 
     @FXML
     public void Fl_Action(ActionEvent event) throws IOException {
-        Parent NewCustomer = FXMLLoader.load(getClass().getResource("resources/Floating.fxml"));
+        Parent NewCustomer = FXMLLoader.load(getClass().getResource("/Floating.fxml"));
         Scene NewCustomerScene = new Scene(NewCustomer);
 
         //Here we get the stage information
@@ -83,7 +82,7 @@ public class RunningProgrammController {
 
     @FXML
     public void runAll(ActionEvent event) throws IOException {
-        Parent NewCustomer = FXMLLoader.load(getClass().getResource("resources/run_all.fxml"));
+        Parent NewCustomer = FXMLLoader.load(getClass().getResource("/run_all.fxml"));
         Scene NewCustomerScene = new Scene(NewCustomer);
 
         //Here we get the stage information

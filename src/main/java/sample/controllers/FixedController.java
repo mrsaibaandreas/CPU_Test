@@ -24,7 +24,7 @@ public class FixedController implements Initializable {
     private Button back;
     @FXML
     public void backButtonAction(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent NewCustomer = FXMLLoader.load(getClass().getResource("resources/running_program.fxml"));
+        Parent NewCustomer = FXMLLoader.load(getClass().getResource("/running_program.fxml"));
         Scene NewCustomerScene = new Scene(NewCustomer);
 
         //Here we get the stage information

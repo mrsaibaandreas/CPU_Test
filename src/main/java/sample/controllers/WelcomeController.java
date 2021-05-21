@@ -6,7 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 
@@ -19,7 +18,7 @@ public class WelcomeController {
     @FXML
     public void handleClick(ActionEvent event) throws IOException {
 
-        Parent NewCustomer = FXMLLoader.load(getClass().getResource("resources/running_program.fxml"));
+        Parent NewCustomer = FXMLLoader.load(getClass().getResource("/running_program.fxml"));
         Scene NewCustomerScene = new Scene(NewCustomer);
 
         //Here we get the stage information
