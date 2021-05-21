@@ -48,6 +48,7 @@ public class CPUFloatingPoint implements IBenchmark {
         }
         switch ((Character)params[0]) {
             case 'f':
+                data_float.add(new Model("Demo", "Demo"));
                 for (Character operator : operators) {
                     timer.start();
                     doOperation(operator, "float");
@@ -59,6 +60,8 @@ public class CPUFloatingPoint implements IBenchmark {
                 break;
 
             case 'd':
+                data_float.add(new Model("Demo", "Demo"));
+
                 for (Character operator : operators) {
                     timer.stop();
                     doOperation(operator, "double");
@@ -66,7 +69,7 @@ public class CPUFloatingPoint implements IBenchmark {
                     log.writeTime("Time for operation " + "[" + operator + " & " + "double" + "]"
                             + " is", (long) endTime, timeUnit);
                     System.out.println(endTime);
-                    data_double.add(new Model(operator.toString(), Double.toString(endTime)));
+                    data_float.add(new Model(operator.toString(), Double.toString(endTime)));
 
                 }
                 log.close();

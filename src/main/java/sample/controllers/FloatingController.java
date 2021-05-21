@@ -72,6 +72,10 @@ public class FloatingController  {
         table.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
         table.getColumns().addAll(time, operator);
         CPUFloatingPoint.data_float.removeAll();
+        CPUFloatingPoint.data_float = null;
+        CPUFloatingPoint.data_float = FXCollections.observableArrayList(
+                new Model("Demo","Demo")
+        );
 
 
 
@@ -80,15 +84,18 @@ public class FloatingController  {
     public void compute_double(ActionEvent event)
     {
         TestCPUFloatingPoint.test('d');
-        d.getColumns().clear();
+        d   .getColumns().clear();
         operator_d.setCellValueFactory(new PropertyValueFactory<>("operator"));
         time_d.setCellValueFactory(new PropertyValueFactory<>("time"));
-        d.setItems(CPUFloatingPoint.data_double);
-        System.out.println(CPUFloatingPoint.data_double);
+        d.setItems(CPUFloatingPoint.data_float);
 
         d.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
         d.getColumns().addAll(time_d, operator_d);
         CPUFloatingPoint.data_float.removeAll();
+        CPUFloatingPoint.data_float = null;
+        CPUFloatingPoint.data_float = FXCollections.observableArrayList(
+                new Model("Demo","Demo")
+        );
 
 
     }

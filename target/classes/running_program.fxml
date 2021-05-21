@@ -10,8 +10,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.RunningProgrammController">
    <children>
-      <Label layoutX="514.0" layoutY="318.0" prefHeight="17.0" prefWidth="76.0" text="Or Run all " />
-      <Button fx:id="run_all" layoutX="518.0" layoutY="352.0" mnemonicParsing="false" text="Run All " onAction="#runAll" />
+
       <Label layoutX="465.0" layoutY="22.0" text="Choose a test:" />
       <ImageView fitHeight="193.0" fitWidth="240.0" layoutX="107.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -21,6 +20,6 @@
       <Button fx:id="floating_point" layoutX="444.0" layoutY="92.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="135.0" text="Floating Point" onAction="#Fl_Action"/>
       <Button fx:id="fx_point" layoutX="444.0" layoutY="46.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="135.0" text="Fixed Point" onAction="#FxAction" />
       <Button fx:id="tr_roots" layoutX="444.0" layoutY="188.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="135.0" text="Threaded Roots" onAction="#Tr_Roots_Action" />
-      <Button fx:id="tr" layoutX="444.0" layoutY="232.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="135.0" text="Catricicau" onAction="#TrAction"/>
+      <Button fx:id="tr" layoutX="444.0" layoutY="232.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="135.0" text="Threads" onAction="#TrAction"/>
    </children>
 </AnchorPane>

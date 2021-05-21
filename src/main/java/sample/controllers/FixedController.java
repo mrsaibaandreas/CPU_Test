@@ -37,6 +37,6 @@ public class FixedController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         TestCPUFixedPoint.test();
-        fixedLabel.setText("The duration was:" + TestCPUFixedPoint._time + "Milli"+ "\nand the result is" + TestCPUFixedPoint.result + "\nMops:" + TestCPUFixedPoint._mops);
+        fixedLabel.setText("The duration was of the test was:\n " + TestCPUFixedPoint._time + "  Milli");
     }
 }
