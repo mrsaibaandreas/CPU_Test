@@ -11,14 +11,14 @@ import sample.fixed_point.timing.Timer;
 public class TestCPUDigitsOfPi {
     public static long time;
     public static String result;
-    public static void test() { //function to be called when clicked
+    public static void test(int params) { //function to be called when clicked
 
         ITimer timer = new Timer();
         ILogger log = new ConsoleLogger();
         TimeUnit timeUnit = TimeUnit.Milli;
 
         IBenchmark testBench = new CPUDigitsOfPi();
-        testBench.initialize(10000);
+        testBench.initialize(params);
         timer.start();
         testBench.run(0);//choose the option
         long endTime = timer.stop();

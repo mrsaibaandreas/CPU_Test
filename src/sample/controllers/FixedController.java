@@ -9,7 +9,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-import sample.fixed_point.bench.cpu.CPUFixedPoint;
 import sample.fixed_point.testbench.TestCPUFixedPoint;
 
 import java.io.IOException;

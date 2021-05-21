@@ -3,6 +3,7 @@ package sample.fixed_point.bench.cpu;
 import sample.fixed_point.bench.IBenchmark;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 
@@ -56,7 +57,7 @@ public class CPUDigitsOfPi implements IBenchmark {
 
     @Override
     public String getResult() {
-        String my_string  = pi_number.toString();
+        String my_string  = Arrays.toString(pi_number);
         return my_string;
     }
 
