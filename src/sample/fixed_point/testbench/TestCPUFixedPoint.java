@@ -12,7 +12,9 @@ import sample.fixed_point.bench.IBenchmark;
 
 
 public class TestCPUFixedPoint {
-
+    public static long _time;
+    public static String result;
+    public static double _mops;
     public static void test() {
         ITimer timer = new Timer();
         ILogger log = new ConsoleLogger();
@@ -28,9 +30,12 @@ public class TestCPUFixedPoint {
         bench.run(1);
         bench.run(2);
         long time = timer.stop();
+        _time = time;
         log.writeTime("Finished in", time, timeUnit);
         log.write("Result is : ", bench.getResult());
+        result = bench.getResult();
         double mops = Double.parseDouble(bench.getResult()) / (time / 1e9) ;
+        _mops = mops;
         log.write("MOPS: ",mops);
 
 

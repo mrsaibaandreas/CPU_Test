@@ -9,6 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import sample.fixed_point.bench.cpu.CPUFixedPoint;
+import sample.fixed_point.testbench.TestCPUFixedPoint;
 
 import java.io.IOException;
 import java.net.URL;
@@ -35,6 +37,7 @@ public class FixedController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        fixedLabel.setText("bla");
+        TestCPUFixedPoint.test();
+        fixedLabel.setText("The duration was:" + TestCPUFixedPoint._time + "Milli"+ "\nand the result is" + TestCPUFixedPoint.result + "\nMops:" + TestCPUFixedPoint._mops);
     }
 }

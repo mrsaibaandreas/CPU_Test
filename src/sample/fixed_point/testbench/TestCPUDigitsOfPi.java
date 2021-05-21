@@ -9,6 +9,8 @@ import sample.fixed_point.timing.ITimer;
 import sample.fixed_point.timing.Timer;
 
 public class TestCPUDigitsOfPi {
+    public static long time;
+    public static String result;
     public static void test() { //function to be called when clicked
 
         ITimer timer = new Timer();
@@ -20,9 +22,10 @@ public class TestCPUDigitsOfPi {
         timer.start();
         testBench.run(0);//choose the option
         long endTime = timer.stop();
-
+        time = endTime;
         log.writeTime("The test has been ended in", endTime, timeUnit);
         log.write(testBench.getResult());
+        result = testBench.getResult();
         log.close();
     }
 
